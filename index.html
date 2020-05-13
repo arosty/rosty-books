@@ -12,24 +12,15 @@
 
 <body>
     <div class="container" id="app">
-        <navbar></navbar>
-        <div>
-            <div class="row justify-content-center">
-                <div class="col-6 col-md-8 col-sm-12">
-                    <h2>Wilkommen auf der Webseite von</h2>
-                    <h1><em>{{ autor }}</em></h1>
-                </div>
-            </div>
-            <div class="row ">
-                <div class="card-product">
-                    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-                    <div class="card-product-infos">
-                      <h2>Product name</h2>
-                      <p>Product description with <strong>relevant info</strong> only.</p>
-                    </div>
-                  </div>                  
+        <navbar :author="author"></navbar>
+        <div class="row justify-content-center bottom-two">
+            <div class="col-6 col-md-8 col-sm-12">
+                <h2>Wilkommen auf der Webseite von</h2>
+                <h1><em>{{ author.name }}</em></h1>
             </div>
         </div>
+        <author-card :author="author"></author-card>
+        <books-pres :books="books"></books-pres>
     </div>
       
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>

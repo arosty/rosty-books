@@ -1,8 +1,8 @@
 @import '_avatar.css';
 @import '_navbar.css';
 @import '_card.css';
+@import '_small-pics.css';
 
-body {
-    font-family: sans-serif;
-    margin: 0;
+.bottom-two {
+    margin-bottom: 5vh;
 }
